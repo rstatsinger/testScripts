@@ -1,5 +1,8 @@
-
-# cp /var/jenkins_home/workspace/ShiftLeftDeveloperDemo/shiftleft.json .
+#!/bin/bash
+# cp /var/jenkins_home/workspace/ShiftLeftDeveloperDemo/shiftleft.json.
+ls
+ls target/
+pwd
 sl run -- java -jar /var/jenkins_home/workspace/ShiftLeftDeveloperDemo/target/hello-shiftleft.0.0.1.jar &
 
 sleep 60
