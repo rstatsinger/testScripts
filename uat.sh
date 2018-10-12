@@ -4,7 +4,7 @@
 sl run -- java -jar /var/jenkins_home/workspace/ShiftLeftDeveloperDemo/target/hello-shiftleft-0.0.1.jar --server.port=3030 &
 
 sleep 60
-while true ; do \
+
 curl -s localhost:3030/customers/2 >/dev/null ;\
 sleep 5 ;\
 curl -s localhost:3030/customers/1 >/dev/null ;\
@@ -35,5 +35,5 @@ wget "localhost:3030/debug?customerId=1&clientId=1&firstName=a&lastName=b&dateOf
 
 /bin/rm -f ./debug*
 sleep 4 ;\
-done
+
 
