@@ -1,3 +1,5 @@
+
+#!/bin/sh
 cp /var/jenkins_home/workspace/ShiftLeft Developer Demo/shiftleft.json .
 
 /usr/local/bin/sl run -- java -jar target/hello-shiftleft.0.0.1.jar
