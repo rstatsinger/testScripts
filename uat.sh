@@ -2,7 +2,7 @@
 #!/bin/sh
 cp /var/jenkins_home/workspace/ShiftLeft Developer Demo/shiftleft.json .
 
-/usr/local/bin/sl run -- java -jar target/hello-shiftleft.0.0.1.jar
+/usr/local/bin/sl run -- java -jar target/hello-shiftleft.0.0.1.jar  &
 
 while true ; do \
 curl -s localhost:3030/customers/2 >/dev/null ;\
@@ -34,3 +34,4 @@ sleep 5 ;\
 wget "localhost:3030/debug?customerId=1&clientId=1&firstName=a&lastName=b&dateOfBirth=123&ssn=123&socialSecurityNum=1&tin=123&phoneNumber=5432%3Cscriscriptpt%3Ealert(1)%3C/sscriptcript%3E" >&/dev/null ;\
 
 /bin/rm -f ./debug*
+done
