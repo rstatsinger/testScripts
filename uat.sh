@@ -1,7 +1,7 @@
 #!/bin/bash
 # cp /var/jenkins_home/workspace/ShiftLeftDeveloperDemo/shiftleft.json.
 
-sl run -- java -jar /var/jenkins_home/workspace/ShiftLeftDeveloperDemo/target/hello-shiftleft-0.0.1.jar &
+sl run -- java -jar /var/jenkins_home/workspace/ShiftLeftDeveloperDemo/target/hello-shiftleft-0.0.1.jar --server.port=3030 &
 
 sleep 60
 while true ; do \
