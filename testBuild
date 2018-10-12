@@ -2,7 +2,7 @@
 echo "testing build..."
 # project name
 
-PROJECT="DevDemo"
+PROJECT="DeveloperDemo"
 
 # violation string or substring
 VIOLSTRING="sensitive"
