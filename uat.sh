@@ -1,8 +1,8 @@
 
-cp /var/jenkins_home/workspace/ShiftLeftDeveloperDemo/shiftleft.json .
+# cp /var/jenkins_home/workspace/ShiftLeftDeveloperDemo/shiftleft.json .
+sl run -- java -jar target/hello-shiftleft.0.0.1.jar &
 
-/usr/local/bin/sl run -- java -jar target/hello-shiftleft.0.0.1.jar &
-
+sleep 60
 while true ; do \
 curl -s localhost:3030/customers/2 >/dev/null ;\
 sleep 5 ;\
