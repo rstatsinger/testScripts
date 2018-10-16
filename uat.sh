@@ -5,7 +5,7 @@ sl run -- java -jar /var/jenkins_home/workspace/ShiftLeftDeveloperDemo/target/he
 
 sleep 60
 
-while true ; do \
+# while true ; do \
 curl -s localhost:3030/customers/2 >/dev/null ;\
 sleep 5 ;\
 curl -s localhost:3030/customers/1 >/dev/null ;\
@@ -36,4 +36,4 @@ wget "localhost:3030/debug?customerId=1&clientId=1&firstName=a&lastName=b&dateOf
 
 /bin/rm -f ./debug* > /dev/null
 sleep 4 ;\
-done
+# done
