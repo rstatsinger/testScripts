@@ -4,10 +4,10 @@ echo "testing build..."
 
 BUILDNUM=$1
 
-PROJECT=DeveloperDemo${buildnum}
+PROJECT=DeveloperDemo${BUILDNUM}
 
 # violation string or substring
-VIOLSTRING="sensitive"
+VIOLSTRING=$2
 
 # ShiftLeft demo lab  org ID
 SHIFTLEFT_ORG_ID=8e348e46-3174-46e6-8ca9-6fed63e40cea
