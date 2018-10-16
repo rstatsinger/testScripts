@@ -4,7 +4,7 @@ echo "testing build..."
 
 BUILDNUM=$1
 
-PROJECT=DeveloperDemo${BUILDNUM}
+PROJECT=CIDemo${BUILDNUM}
 
 # violation string or substring
 VIOLSTRING=$2
