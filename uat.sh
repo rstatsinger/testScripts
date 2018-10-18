@@ -1,6 +1,7 @@
 #!/bin/bash
 
-$HOME/bin/sl run -- java -jar /var/jenkins_home/workspace/ShiftLeftCIDemo/target/hello-shiftleft-0.0.1.jar --server.port=3030 &
+JenkinsProj=$1
+$HOME/bin/sl run -- java -jar /var/jenkins_home/workspace/$JenkinsProj/target/hello-shiftleft-0.0.1.jar --server.port=3030 &
 
 sleep 60
 
