@@ -28,6 +28,8 @@ numViols=`curl -s "https://www.shiftleft.io/api/v2/organizations/$SHIFTLEFT_ORG_
 
 # | jq ".responses[0].violationsAll.violations | map(select(.count > 0)) | map(.name)" 
 
+echo "nonzero number of critical vulnerabilities found"
+
 if [ $numViols -gt 0 ]; then
         echo -n "nonzero number of vulnerabilities: "
         echo $numViols
